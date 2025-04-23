@@ -36,7 +36,7 @@ function Home() {
   const[moviesData,setMoviesData]= useState([])
 
     useEffect(()=>{
-        fetch('https://mymoviz-3wn89j5pa-ethans-projects-7336e2f6.vercel.app/movies').then(reponse => reponse.json()).then(data=>{
+        fetch('https://mymoviz-920tyo192-ethans-projects-7336e2f6.vercel.app/movies').then(reponse => reponse.json()).then(data=>{
 
           const movies = data.movie.map((data) => {
             if (data.overview.length > 250) {
